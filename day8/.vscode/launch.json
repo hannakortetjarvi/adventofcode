@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch DayEight",
+            "request": "launch",
+            "mainClass": "day8.DayEight",
+            "projectName": ""
+        },
+        {
+            "name": "Debug Java",
+            "type": "java",
+            "request": "launch",
+            "externalConsole": true,
+            "stopOnEntry": true,
+            "preLaunchTask": "build",
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${workspaceRoot}",
+            "startupClass": "${workspaceRoot}${file}",
+            "sourcePath": [
+                "${workspaceRoot}"
+            ],
+            "classpath": [
+                "${workspaceRoot}"
+            ],
+            "options": [],
+            "args": []
+        }
+    ],
+    "compounds": []
+}
