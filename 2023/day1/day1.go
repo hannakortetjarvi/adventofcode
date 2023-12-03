@@ -12,7 +12,7 @@ var digits = []string{"one", "two", "three", "four", "five", "six", "seven", "ei
 var nums = []string{"1", "2", "3", "4", "5", "6", "7", "8", "9"}
 
 func main() {
-	path := "inputs/input1.txt"
+	path := "inputs/test_input1.txt"
 	lines, err := utils.ReadLines(path)
 	if err != nil {
 		log.Fatalf("error: %s", err)
