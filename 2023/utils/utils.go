@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -29,4 +30,21 @@ func RemoveWhiteLine(list []string) (array []string) {
 		}
 	}
 	return
+}
+
+func RemoveEmptyLine(list []string) (array []string) {
+	for _, line := range list {
+		if line != "" {
+			array = append(array, line)
+		}
+	}
+	return
+}
+
+// Check if byte is number
+func IsDigit(value byte) bool {
+	if _, err := strconv.Atoi(string(value)); err == nil {
+		return true
+	}
+	return false
 }

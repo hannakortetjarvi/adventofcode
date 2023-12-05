@@ -76,7 +76,7 @@ func PartTwo(lines []string) (sum int) {
 
 func initList(array []string) map[int]int {
 	m := make(map[int]int)
-	for i, _ := range array {
+	for i := range array {
 		index := i + 1
 		m[index] = 1
 	}
