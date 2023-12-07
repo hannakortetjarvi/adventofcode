@@ -19,7 +19,7 @@ func main() {
 	lines = utils.RemoveEmptyLine(lines)
 
 	fmt.Printf("Result of part one: %v\n", PartOne(lines))
-	fmt.Printf("Result of part two: %v\n", PartTwo(lines))
+	//fmt.Printf("Result of part two: %v\n", PartTwo(lines))
 }
 
 // Part one of day 5
@@ -85,12 +85,12 @@ func GetDestination(dest int, sour int, rang int, num int) int {
 
 // --------------------------------------------------------------------------------
 
+/**
 // Part two of day 5
 func PartTwo(lines []string) int {
 	_, after, _ := strings.Cut(lines[0], ": ")
 	seedPairs := strings.Split(after, " ")
-	min := LargestSeed(seedPairs)
-	fmt.Println(min)
+	min := math.MaxInt32
 
 	for i := 0; i < len(seedPairs)/2; i++ {
 		seeds := InitRangeSeeds(seedPairs[i*2], seedPairs[i*2+1])
@@ -114,22 +114,12 @@ func PartTwo(lines []string) int {
 			}
 			if seeds[j] < min {
 				min = seeds[j]
-				fmt.Println(min)
 			}
 		}
+		fmt.Println(min)
 	}
 
 	return min
-}
-
-func LargestSeed(seeds []string) (max int) {
-	for _, seed := range seeds {
-		num, _ := strconv.Atoi(seed)
-		if num > max {
-			max = num
-		}
-	}
-	return
 }
 
 func InitRangeSeeds(start string, end string) []int {
@@ -142,3 +132,4 @@ func InitRangeSeeds(start string, end string) []int {
 	}
 	return seedsSlice
 }
+*/
