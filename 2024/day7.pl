@@ -1,7 +1,6 @@
 #!/usr/bin/perl -l
 use warnings;
 
-# Read lines into matrix
 my $INFILE;
 open($INFILE, "inputs/day7.txt") or die "day7.txt doesn't open: $!";
 
